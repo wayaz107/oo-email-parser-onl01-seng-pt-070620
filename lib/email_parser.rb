@@ -11,8 +11,9 @@ def initialize(emails)
 
 def parse
   @emails.split.collect do |email|
-    email.split(",").flatten.uniq
+    email.split(",")
   end
+  .flatten.uniq
 end
 
 
