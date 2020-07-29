@@ -10,7 +10,7 @@ def initialize(emails)
   end
 
 def parse
-  @emails.each do |email|
+  @emails.split.collect do |email|
     email.split(",").flatten.uniq
   end
 end
