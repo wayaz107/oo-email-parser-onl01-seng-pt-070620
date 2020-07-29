@@ -11,9 +11,8 @@ def initialize(emails)
 
 def parse
   @emails.each do |email|
-    email.split(",")
+    email.split(",").flatten.uniq
   end
-  .flatten.uniq
 end
 
 
